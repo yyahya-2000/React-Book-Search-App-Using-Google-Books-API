@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/React-Book-Search-App-Using-Google-Books-API/static/js/main.ec8e9e7e.js",
+    "static/js/787.26ac994f.chunk.js": "/React-Book-Search-App-Using-Google-Books-API/static/js/787.26ac994f.chunk.js",
+    "index.html": "/React-Book-Search-App-Using-Google-Books-API/index.html",
+    "main.ec8e9e7e.js.map": "/React-Book-Search-App-Using-Google-Books-API/static/js/main.ec8e9e7e.js.map",
+    "787.26ac994f.chunk.js.map": "/React-Book-Search-App-Using-Google-Books-API/static/js/787.26ac994f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ec8e9e7e.js"
+  ]
+}
