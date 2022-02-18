@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {FC} from 'react';
+import { Routes, Route, BrowserRouter} from 'react-router-dom'
+import NoPage from './componentes/common/NoPage';
+import BookDetail from './componentes/SearchBooks/BookDetail/BookDetail';
+import searchBooksRoutes from './routers/searchBooks';
+import SearchBooks from './view/SearchBooks';
 
-function App() {
+const App: FC =  () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SearchBooks />}>
+            <Route path={searchBooksRoutes.home} element={<SearchBooks />} />
+        </Route>
+        <Route path={searchBooksRoutes.detail} element={<BookDetail />} />
+        <Route path="*" element={<NoPage />} /> 
+      </Routes>
+    </BrowserRouter>
   );
 }
 
